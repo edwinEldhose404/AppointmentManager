@@ -136,7 +136,7 @@
       <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="832.4000000000001,6938.4" sap2010:WorkflowViewState.IdRef="Sequence_2">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="897.2,8367.2" sap2010:WorkflowViewState.IdRef="Sequence_2">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="ApptDate" />
       <Variable x:TypeArguments="x:String" Default="City Health Clinic" Name="clinic_name" />
@@ -157,7 +157,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="702.4,4769.6" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_1">
+    <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="769.6,4769.6" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_1">
       <ueab:ExcelProcessScopeX.Body>
         <ActivityAction x:TypeArguments="ui:IExcelProcess">
           <ActivityAction.Argument>
@@ -285,7 +285,7 @@
                               </ActivityAction>
                             </p:WordApplicationScope.Body>
                           </p:WordApplicationScope>
-                          <ui:SendMail Bcc="{x:Null}" Cc="{x:Null}" ContinueOnError="{x:Null}" MailMessage="{x:Null}" ReplyTo="{x:Null}" ResourceAttachmentList="{x:Null}" ResourceAttachments="{x:Null}" Result="{x:Null}" SecurePassword="{x:Null}" TimeoutMS="{x:Null}" UseOAuth="{x:Null}" AttachmentInputMode="FilePaths" Body="[String.Format(&quot;Dear {0},{1}This is a reminder of your appointment with Dr. {2} on {3} at {4}.{1}Please arrive 10 minutes early.{1}Regards, Your Clinic&quot;, PatientName, Environment.NewLine, Doctor, ApptDate, TimeSlot)]" ConnectionMode="LegacyConfiguration" DisplayName="Send SMTP Email" Email="kasiva748@gmail.com" EnableSSL="True" From="kasiva748@gmail.com" sap:VirtualizedContainerService.HintSize="451.2,321.6" sap2010:WorkflowViewState.IdRef="SendMail_1" IgnoreCRL="False" IsBodyHtml="False" Name="Your Clinic Name" Password="sycg qzap xtwk qqzf" Port="587" SecureConnection="Auto" Server="smtp.gmail.com" Subject="Appointment Confirmation - Your Clinic" To="[PatientEmail]" UseISConnection="False" UseRichTextEditor="True">
+                          <ui:SendMail Bcc="{x:Null}" Cc="{x:Null}" ContinueOnError="{x:Null}" MailMessage="{x:Null}" ReplyTo="{x:Null}" ResourceAttachmentList="{x:Null}" ResourceAttachments="{x:Null}" Result="{x:Null}" SecurePassword="{x:Null}" TimeoutMS="{x:Null}" UseOAuth="{x:Null}" AttachmentInputMode="FilePaths" Body="[String.Format(&quot;Dear {0},{1}This is a reminder of your appointment with Dr. {2} on {3} at {4}.{1}Please arrive 10 minutes early.{1}Regards, Your Clinic&quot;, PatientName, Environment.NewLine, Doctor, ApptDate, TimeSlot)]" ConnectionMode="LegacyConfiguration" DisplayName="Send SMTP Email" Email="kasiva748@gmail.com" EnableSSL="True" From="kasiva748@gmail.com" sap:VirtualizedContainerService.HintSize="451.2,321.6" sap2010:WorkflowViewState.IdRef="SendMail_1" IgnoreCRL="False" IsBodyHtml="False" Name="Admin" Password="sycg qzap xtwk qqzf" Port="587" SecureConnection="Auto" Server="smtp.gmail.com" Subject="Appointment Confirmation - Your Clinic" To="[PatientEmail]" UseISConnection="False" UseRichTextEditor="True">
                             <ui:SendMail.AttachmentsBackup>
                               <usau:BackupSlot x:TypeArguments="umame:AttachmentInputMode" StoredValue="FilePaths">
                                 <usau:BackupSlot.BackupValues>
@@ -346,141 +346,234 @@
         </ActivityAction>
       </ueab:ExcelProcessScopeX.Body>
     </ueab:ExcelProcessScopeX>
-    <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="702.4,2145.6" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_2">
+    <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="769.6,2026.4" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_2">
       <ueab:ExcelProcessScopeX.Body>
         <ActivityAction x:TypeArguments="ui:IExcelProcess">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="ui:IExcelProcess" Name="ExcelProcessScopeTag" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="668.8,2036" sap2010:WorkflowViewState.IdRef="Sequence_10">
+          <Sequence sap:VirtualizedContainerService.HintSize="736,1908" sap2010:WorkflowViewState.IdRef="Sequence_17">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" SensitivityLabel="{x:Null}" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="635.2,1976" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_1" ResizeWindow="None" SensitivityOperation="None" UseTemplate="True" WorkbookPath="C:\Users\Edwin\Downloads\Appointments_copy.xlsx">
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="702.4,1848" sap2010:WorkflowViewState.IdRef="Sequence_10">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" SensitivityLabel="{x:Null}" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="668.8,1764.8" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_1" ResizeWindow="None" SensitivityOperation="None" UseTemplate="True" WorkbookPath="C:\Users\Edwin\Downloads\Appointments_copy.xlsx">
+                <ueab:ExcelApplicationCard.Body>
+                  <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
+                    <ActivityAction.Argument>
+                      <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
+                    </ActivityAction.Argument>
+                    <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="635.2,1448.8" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" SensitivityLabel="{x:Null}" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="601.6,1388.8" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_2" ResizeWindow="None" SensitivityOperation="None" WorkbookPath="C:\Users\Edwin\Downloads\Doctors.xlsx">
+                        <ueab:ExcelApplicationCard.Body>
+                          <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
+                            <ActivityAction.Argument>
+                              <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel1" />
+                            </ActivityAction.Argument>
+                            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="568,1056" sap2010:WorkflowViewState.IdRef="Sequence_13">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <ueab:ExcelForEachRowX DisplayName="For Each Excel Row" EmptyRowBehavior="Stop" HasHeaders="False" sap:VirtualizedContainerService.HintSize="534.4,996" sap2010:WorkflowViewState.IdRef="ExcelForEachRowX_1" Range="[Excel1.Sheet(&quot;Sheet1&quot;)]" SaveAfterEachRow="False">
+                                <ueab:ExcelForEachRowX.Body>
+                                  <ActivityAction x:TypeArguments="ue:CurrentRowQuickHandle, x:Int32">
+                                    <ActivityAction.Argument1>
+                                      <DelegateInArgument x:TypeArguments="ue:CurrentRowQuickHandle" Name="CurrentRow1" />
+                                    </ActivityAction.Argument1>
+                                    <ActivityAction.Argument2>
+                                      <DelegateInArgument x:TypeArguments="x:Int32" Name="CurrentIndex" />
+                                    </ActivityAction.Argument2>
+                                    <Sequence sap:VirtualizedContainerService.HintSize="500.8,780" sap2010:WorkflowViewState.IdRef="Sequence_16">
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                      <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="467.2,720" sap2010:WorkflowViewState.IdRef="Sequence_14">
+                                        <Sequence.Variables>
+                                          <Variable x:TypeArguments="x:String" Name="doc" />
+                                        </Sequence.Variables>
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                        <ueab:FilterX ClearFilter="False" ColumnName="Doctor" DisplayName="Filter" HasHeaders="True" sap:VirtualizedContainerService.HintSize="433.6,202.4" sap2010:WorkflowViewState.IdRef="FilterX_2" Range="[Excel.Sheet(&quot;Sheet1&quot;)]">
+                                          <ueab:FilterX.FilterArgument>
+                                            <ueabf:FilterArgument Mode="Basic">
+                                              <ueabf:FilterArgument.AdvancedFiltersArgument>
+                                                <ueabf:AdvancedFilterArgument LogicalOperator="And">
+                                                  <ueabf:AdvancedFilterArgument.Condition1>
+                                                    <ueabf:AdvancedFilterCondition Value="{x:Null}" Operator="NONE" />
+                                                  </ueabf:AdvancedFilterArgument.Condition1>
+                                                  <ueabf:AdvancedFilterArgument.Condition2>
+                                                    <ueabf:AdvancedFilterCondition Value="{x:Null}" Operator="NONE" />
+                                                  </ueabf:AdvancedFilterArgument.Condition2>
+                                                </ueabf:AdvancedFilterArgument>
+                                              </ueabf:FilterArgument.AdvancedFiltersArgument>
+                                              <ueabf:FilterArgument.BasicFiltersArgument>
+                                                <ueabf:BasicFilterArgument>
+                                                  <ueabf:BasicFilterArgument.BasicFilters>
+                                                    <scg:List x:TypeArguments="InArgument(x:String)" Capacity="1">
+                                                      <InArgument x:TypeArguments="x:String">[CurrentRow1.ByIndex(0).ToString]</InArgument>
+                                                    </scg:List>
+                                                  </ueabf:BasicFilterArgument.BasicFilters>
+                                                </ueabf:BasicFilterArgument>
+                                              </ueabf:FilterArgument.BasicFiltersArgument>
+                                            </ueabf:FilterArgument>
+                                          </ueab:FilterX.FilterArgument>
+                                        </ueab:FilterX>
+                                        <ueab:FilterX ClearFilter="False" ColumnName="ApptDate" DisplayName="Filter" HasHeaders="True" sap:VirtualizedContainerService.HintSize="433.6,202.4" sap2010:WorkflowViewState.IdRef="FilterX_4" Range="[Excel.Sheet(&quot;Sheet1&quot;)]">
+                                          <ueab:FilterX.FilterArgument>
+                                            <ueabf:FilterArgument Mode="Basic">
+                                              <ueabf:FilterArgument.AdvancedFiltersArgument>
+                                                <ueabf:AdvancedFilterArgument LogicalOperator="And">
+                                                  <ueabf:AdvancedFilterArgument.Condition1>
+                                                    <ueabf:AdvancedFilterCondition Value="{x:Null}" Operator="NONE" />
+                                                  </ueabf:AdvancedFilterArgument.Condition1>
+                                                  <ueabf:AdvancedFilterArgument.Condition2>
+                                                    <ueabf:AdvancedFilterCondition Value="{x:Null}" Operator="NONE" />
+                                                  </ueabf:AdvancedFilterArgument.Condition2>
+                                                </ueabf:AdvancedFilterArgument>
+                                              </ueabf:FilterArgument.AdvancedFiltersArgument>
+                                              <ueabf:FilterArgument.BasicFiltersArgument>
+                                                <ueabf:BasicFilterArgument>
+                                                  <ueabf:BasicFilterArgument.BasicFilters>
+                                                    <scg:List x:TypeArguments="InArgument(x:String)" Capacity="1">
+                                                      <InArgument x:TypeArguments="x:String">[Now.ToString("dd/MM/yyyy")]</InArgument>
+                                                    </scg:List>
+                                                  </ueabf:BasicFilterArgument.BasicFilters>
+                                                </ueabf:BasicFilterArgument>
+                                              </ueabf:FilterArgument.BasicFiltersArgument>
+                                            </ueabf:FilterArgument>
+                                          </ueab:FilterX.FilterArgument>
+                                        </ueab:FilterX>
+                                        <ueab:SaveExcelFileAsX DisplayName="Save Excel File As" FilePath="[&quot;Output_&quot; + CurrentRow1.ByIndex(0).ToString + &quot;.xlsx&quot;]" sap:VirtualizedContainerService.HintSize="433.6,232" sap2010:WorkflowViewState.IdRef="SaveExcelFileAsX_2" SaveAsFileType="OpenXmlWorkbook" Workbook="[Excel]" />
+                                      </Sequence>
+                                    </Sequence>
+                                  </ActivityAction>
+                                </ueab:ExcelForEachRowX.Body>
+                              </ueab:ExcelForEachRowX>
+                            </Sequence>
+                          </ActivityAction>
+                        </ueab:ExcelApplicationCard.Body>
+                      </ueab:ExcelApplicationCard>
+                    </Sequence>
+                  </ActivityAction>
+                </ueab:ExcelApplicationCard.Body>
+              </ueab:ExcelApplicationCard>
+            </Sequence>
+          </Sequence>
+        </ActivityAction>
+      </ueab:ExcelProcessScopeX.Body>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ueab:ExcelProcessScopeX>
+    <ui:KillProcess AppliesTo="{x:Null}" ContinueOnError="{x:Null}" Process="{x:Null}" DisplayName="Kill Process" sap:VirtualizedContainerService.HintSize="769.6,166.4" sap2010:WorkflowViewState.IdRef="KillProcess_2" ProcessName="Excel" />
+    <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="769.6,1381.6" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_3">
+      <ueab:ExcelProcessScopeX.Body>
+        <ActivityAction x:TypeArguments="ui:IExcelProcess">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="ui:IExcelProcess" Name="ExcelProcessScopeTag" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="617.6,1272" sap2010:WorkflowViewState.IdRef="Sequence_18">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" SensitivityLabel="{x:Null}" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="584,1212" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_3" ResizeWindow="None" SensitivityOperation="None" WorkbookPath="C:\Users\Edwin\Downloads\Doctors.xlsx">
               <ueab:ExcelApplicationCard.Body>
                 <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
                   <ActivityAction.Argument>
-                    <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
+                    <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel1" />
                   </ActivityAction.Argument>
-                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="601.6,1660" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="550.4,919.2" sap2010:WorkflowViewState.IdRef="Sequence_21">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" SensitivityLabel="{x:Null}" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="568,1600" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_2" ResizeWindow="None" SensitivityOperation="None" WorkbookPath="C:\Users\Edwin\Downloads\Doctors.xlsx">
-                      <ueab:ExcelApplicationCard.Body>
-                        <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
-                          <ActivityAction.Argument>
-                            <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel1" />
-                          </ActivityAction.Argument>
-                          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="534.4,1307.2" sap2010:WorkflowViewState.IdRef="Sequence_13">
+                    <ueab:ExcelForEachRowX DisplayName="For Each Excel Row" EmptyRowBehavior="Stop" HasHeaders="False" sap:VirtualizedContainerService.HintSize="516.8,859.2" sap2010:WorkflowViewState.IdRef="ExcelForEachRowX_2" Range="[Excel1.Sheet(&quot;Sheet1&quot;)]" SaveAfterEachRow="False">
+                      <ueab:ExcelForEachRowX.Body>
+                        <ActivityAction x:TypeArguments="ue:CurrentRowQuickHandle, x:Int32">
+                          <ActivityAction.Argument1>
+                            <DelegateInArgument x:TypeArguments="ue:CurrentRowQuickHandle" Name="CurrentRow1" />
+                          </ActivityAction.Argument1>
+                          <ActivityAction.Argument2>
+                            <DelegateInArgument x:TypeArguments="x:Int32" Name="CurrentIndex" />
+                          </ActivityAction.Argument2>
+                          <Sequence sap:VirtualizedContainerService.HintSize="483.2,643.2" sap2010:WorkflowViewState.IdRef="Sequence_20">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
-                            <ueab:ExcelForEachRowX DisplayName="For Each Excel Row" EmptyRowBehavior="Stop" HasHeaders="False" sap:VirtualizedContainerService.HintSize="500.8,1247.2" sap2010:WorkflowViewState.IdRef="ExcelForEachRowX_1" Range="[Excel1.Sheet(&quot;Sheet1&quot;)]" SaveAfterEachRow="False">
-                              <ueab:ExcelForEachRowX.Body>
-                                <ActivityAction x:TypeArguments="ue:CurrentRowQuickHandle, x:Int32">
-                                  <ActivityAction.Argument1>
-                                    <DelegateInArgument x:TypeArguments="ue:CurrentRowQuickHandle" Name="CurrentRow1" />
-                                  </ActivityAction.Argument1>
-                                  <ActivityAction.Argument2>
-                                    <DelegateInArgument x:TypeArguments="x:Int32" Name="CurrentIndex" />
-                                  </ActivityAction.Argument2>
-                                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="467.2,1031.2" sap2010:WorkflowViewState.IdRef="Sequence_14">
-                                    <sap:WorkflowViewStateService.ViewState>
-                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                      </scg:Dictionary>
-                                    </sap:WorkflowViewStateService.ViewState>
-                                    <ueab:FilterX ClearFilter="False" ColumnName="Doctor" DisplayName="Filter" HasHeaders="True" sap:VirtualizedContainerService.HintSize="433.6,202.4" sap2010:WorkflowViewState.IdRef="FilterX_2" Range="[Excel.Sheet(&quot;Sheet1&quot;)]">
-                                      <ueab:FilterX.FilterArgument>
-                                        <ueabf:FilterArgument Mode="Basic">
-                                          <ueabf:FilterArgument.AdvancedFiltersArgument>
-                                            <ueabf:AdvancedFilterArgument LogicalOperator="And">
-                                              <ueabf:AdvancedFilterArgument.Condition1>
-                                                <ueabf:AdvancedFilterCondition Value="{x:Null}" Operator="NONE" />
-                                              </ueabf:AdvancedFilterArgument.Condition1>
-                                              <ueabf:AdvancedFilterArgument.Condition2>
-                                                <ueabf:AdvancedFilterCondition Value="{x:Null}" Operator="NONE" />
-                                              </ueabf:AdvancedFilterArgument.Condition2>
-                                            </ueabf:AdvancedFilterArgument>
-                                          </ueabf:FilterArgument.AdvancedFiltersArgument>
-                                          <ueabf:FilterArgument.BasicFiltersArgument>
-                                            <ueabf:BasicFilterArgument>
-                                              <ueabf:BasicFilterArgument.BasicFilters>
-                                                <scg:List x:TypeArguments="InArgument(x:String)" Capacity="1">
-                                                  <InArgument x:TypeArguments="x:String">[CurrentRow1.ByIndex(0).ToString]</InArgument>
-                                                </scg:List>
-                                              </ueabf:BasicFilterArgument.BasicFilters>
-                                            </ueabf:BasicFilterArgument>
-                                          </ueabf:FilterArgument.BasicFiltersArgument>
-                                        </ueabf:FilterArgument>
-                                      </ueab:FilterX.FilterArgument>
-                                    </ueab:FilterX>
-                                    <ueab:FilterX ClearFilter="False" ColumnName="ApptDate" DisplayName="Filter" HasHeaders="True" sap:VirtualizedContainerService.HintSize="433.6,202.4" sap2010:WorkflowViewState.IdRef="FilterX_4" Range="[Excel.Sheet(&quot;Sheet1&quot;)]">
-                                      <ueab:FilterX.FilterArgument>
-                                        <ueabf:FilterArgument Mode="Basic">
-                                          <ueabf:FilterArgument.AdvancedFiltersArgument>
-                                            <ueabf:AdvancedFilterArgument LogicalOperator="And">
-                                              <ueabf:AdvancedFilterArgument.Condition1>
-                                                <ueabf:AdvancedFilterCondition Value="{x:Null}" Operator="NONE" />
-                                              </ueabf:AdvancedFilterArgument.Condition1>
-                                              <ueabf:AdvancedFilterArgument.Condition2>
-                                                <ueabf:AdvancedFilterCondition Value="{x:Null}" Operator="NONE" />
-                                              </ueabf:AdvancedFilterArgument.Condition2>
-                                            </ueabf:AdvancedFilterArgument>
-                                          </ueabf:FilterArgument.AdvancedFiltersArgument>
-                                          <ueabf:FilterArgument.BasicFiltersArgument>
-                                            <ueabf:BasicFilterArgument>
-                                              <ueabf:BasicFilterArgument.BasicFilters>
-                                                <scg:List x:TypeArguments="InArgument(x:String)" Capacity="1">
-                                                  <InArgument x:TypeArguments="x:String">[Now.ToString("dd/MM/yyyy")]</InArgument>
-                                                </scg:List>
-                                              </ueabf:BasicFilterArgument.BasicFilters>
-                                            </ueabf:BasicFilterArgument>
-                                          </ueabf:FilterArgument.BasicFiltersArgument>
-                                        </ueabf:FilterArgument>
-                                      </ueab:FilterX.FilterArgument>
-                                    </ueab:FilterX>
-                                    <ueab:SaveExcelFileAsX DisplayName="Save Excel File As" FilePath="Output.xlsx" sap:VirtualizedContainerService.HintSize="433.6,240.8" sap2010:WorkflowViewState.IdRef="SaveExcelFileAsX_2" SaveAsFileType="OpenXmlWorkbook" Workbook="[Excel]" />
-                                    <ui:SendMail Bcc="{x:Null}" Cc="{x:Null}" ContinueOnError="{x:Null}" MailMessage="{x:Null}" ReplyTo="{x:Null}" ResourceAttachmentList="{x:Null}" ResourceAttachments="{x:Null}" Result="{x:Null}" SecurePassword="{x:Null}" TimeoutMS="{x:Null}" UseOAuth="{x:Null}" AttachmentInputMode="FilePaths" Body="Your pending appointments are listed in the attached Excel file" ConnectionMode="LegacyConfiguration" DisplayName="Send SMTP Email" Email="kasiva748@gmail.com" EnableSSL="True" From="kasiva748@gmail.com" sap:VirtualizedContainerService.HintSize="433.6,325.6" sap2010:WorkflowViewState.IdRef="SendMail_2" IgnoreCRL="False" IsBodyHtml="False" Name="Admin" Password="sycg qzap xtwk qqzf" Port="587" SecureConnection="Auto" Server="smtp.gmail.com" Subject="Appointments - Your Clinic" To="sivaka535553@gmail.com" UseISConnection="False" UseRichTextEditor="True">
-                                      <ui:SendMail.AttachmentsBackup>
-                                        <usau:BackupSlot x:TypeArguments="umame:AttachmentInputMode" StoredValue="FilePaths">
-                                          <usau:BackupSlot.BackupValues>
-                                            <scg:List x:TypeArguments="x:Object" x:Key="Existing" Capacity="1">
-                                              <x:Null />
-                                            </scg:List>
-                                          </usau:BackupSlot.BackupValues>
-                                        </usau:BackupSlot>
-                                      </ui:SendMail.AttachmentsBackup>
-                                      <ui:SendMail.ConnectionDetailsBackupSlot>
-                                        <usau:BackupSlot x:TypeArguments="umae:ConnectionDetails" StoredValue="LegacyConfiguration">
-                                          <usau:BackupSlot.BackupValues>
-                                            <scg:List x:TypeArguments="x:Object" x:Key="IntegrationService" Capacity="1">
-                                              <x:Null />
-                                            </scg:List>
-                                          </usau:BackupSlot.BackupValues>
-                                        </usau:BackupSlot>
-                                      </ui:SendMail.ConnectionDetailsBackupSlot>
-                                      <ui:SendMail.Files>
-                                        <scg:List x:TypeArguments="InArgument(x:String)" Capacity="4">
-                                          <InArgument x:TypeArguments="x:String">C:\Users\Edwin\Documents\UiPath\AppointmentManager\Output.xlsx</InArgument>
-                                        </scg:List>
-                                      </ui:SendMail.Files>
-                                    </ui:SendMail>
-                                  </Sequence>
-                                </ActivityAction>
-                              </ueab:ExcelForEachRowX.Body>
-                            </ueab:ExcelForEachRowX>
+                            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="449.6,583.2" sap2010:WorkflowViewState.IdRef="Sequence_19">
+                              <Sequence.Variables>
+                                <Variable x:TypeArguments="x:String" Name="doc" />
+                              </Sequence.Variables>
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <Assign sap:VirtualizedContainerService.HintSize="416,174.4" sap2010:WorkflowViewState.IdRef="Assign_10">
+                                <Assign.To>
+                                  <OutArgument x:TypeArguments="x:String">[doc]</OutArgument>
+                                </Assign.To>
+                                <Assign.Value>
+                                  <InArgument x:TypeArguments="x:String">[CurrentRow1.ByIndex(0).ToString]</InArgument>
+                                </Assign.Value>
+                              </Assign>
+                              <ui:SendMail Bcc="{x:Null}" Cc="{x:Null}" ContinueOnError="{x:Null}" MailMessage="{x:Null}" ReplyTo="{x:Null}" ResourceAttachmentList="{x:Null}" ResourceAttachments="{x:Null}" Result="{x:Null}" SecurePassword="{x:Null}" TimeoutMS="{x:Null}" UseOAuth="{x:Null}" AttachmentInputMode="FilePaths" Body="Your pending appointments are listed in the attached Excel file" ConnectionMode="LegacyConfiguration" DisplayName="Send SMTP Email" Email="kasiva748@gmail.com" EnableSSL="True" From="kasiva748@gmail.com" sap:VirtualizedContainerService.HintSize="416,325.6" sap2010:WorkflowViewState.IdRef="SendMail_2" IgnoreCRL="False" IsBodyHtml="False" Name="Admin" Password="sycg qzap xtwk qqzf" Port="587" SecureConnection="Auto" Server="smtp.gmail.com" Subject="Appointments - Your Clinic" To="edwin282869@gmail.com" UseISConnection="False" UseRichTextEditor="True">
+                                <ui:SendMail.AttachmentsBackup>
+                                  <usau:BackupSlot x:TypeArguments="umame:AttachmentInputMode" StoredValue="FilePaths">
+                                    <usau:BackupSlot.BackupValues>
+                                      <scg:List x:TypeArguments="x:Object" x:Key="Existing" Capacity="1">
+                                        <x:Null />
+                                      </scg:List>
+                                    </usau:BackupSlot.BackupValues>
+                                  </usau:BackupSlot>
+                                </ui:SendMail.AttachmentsBackup>
+                                <ui:SendMail.ConnectionDetailsBackupSlot>
+                                  <usau:BackupSlot x:TypeArguments="umae:ConnectionDetails" StoredValue="LegacyConfiguration">
+                                    <usau:BackupSlot.BackupValues>
+                                      <scg:List x:TypeArguments="x:Object" x:Key="IntegrationService" Capacity="1">
+                                        <x:Null />
+                                      </scg:List>
+                                    </usau:BackupSlot.BackupValues>
+                                  </usau:BackupSlot>
+                                </ui:SendMail.ConnectionDetailsBackupSlot>
+                                <ui:SendMail.Files>
+                                  <scg:List x:TypeArguments="InArgument(x:String)" Capacity="4">
+                                    <InArgument x:TypeArguments="x:String">["C:\Users\Edwin\Documents\UiPath\AppointmentManager\Output_" + doc.ToString + ".xlsx"]</InArgument>
+                                  </scg:List>
+                                </ui:SendMail.Files>
+                              </ui:SendMail>
+                            </Sequence>
                           </Sequence>
                         </ActivityAction>
-                      </ueab:ExcelApplicationCard.Body>
-                    </ueab:ExcelApplicationCard>
+                      </ueab:ExcelForEachRowX.Body>
+                    </ueab:ExcelForEachRowX>
                   </Sequence>
                 </ActivityAction>
               </ueab:ExcelApplicationCard.Body>
